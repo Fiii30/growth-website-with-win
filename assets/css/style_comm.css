@@ -1,0 +1,212 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-navbar{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbarNav{
+    justify-content: end;
+}
+
+#logo{
+    align-items: start;
+    width: 250px;
+    padding: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    padding: 10px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-family:'Segoe UI', sans-serif;
+    color: black;
+    font-size: 20px;
+
+}
+.nav-links a:hover{
+    color: rgb(221, 0, 0);
+    transition: 0.3s ease-in;
+}
+
+.links-disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.container-content {
+    background-image: url(../image/majalahwin.jpeg);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* FORM */
+.form-card {
+    background-color: rgb(226, 226, 226);
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px black;
+}
+
+.form-card p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-card textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: both;
+}
+
+.form-card button {
+    padding: 12px;
+    background-color: rgb(244, 209, 157);
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background-color: white;
+}
+
+
+/* COMMUNITY */
+.content {
+    width: 800px;
+    /* min-height: 250px;
+    max-height: 500px;
+     */;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgb(219, 219, 219);
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px black;
+}
+
+.content > p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.live-chat {
+    background-color: rgb(255, 234, 234);
+    padding: 20px;
+    border-radius: 10px;
+
+    min-height: 300px;
+    max-height: 500px;
+
+    overflow-y: auto;
+}
+
+/* CHAT */
+.chat-user {
+    width: fit-content;
+    max-width: 70%;
+
+    padding: 12px 15px;
+    margin-bottom: 15px;
+
+    border-radius: 15px;
+
+    background-color: #418fd3;
+    color: white;
+}
+
+/* USER */
+.user {
+    margin-bottom: 8px;
+}
+
+.user-name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.user-email {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #e5e5e5;
+}
+
+.comment {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.contact-img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px;
+}
+
+#footer{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(251, 240, 226);
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}

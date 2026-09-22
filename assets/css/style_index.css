@@ -42,7 +42,7 @@
 
 .container-content{
     overflow: hidden;
-    background-image: url(../picture/win_org.jpeg);
+    background-image: url(../image/win_org.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -108,6 +108,19 @@
 }
 #title-card{
     font-size: 20px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.contact-img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px;
 }
 
 #footer{

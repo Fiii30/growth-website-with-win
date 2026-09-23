@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Ride Plan</title>
+        <link rel="stylesheet" href="../assets/css/style_addplan.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <button type="button" id="backButton">
+                ← Kembali
+        </button>
+        <div class="ride-container">
+            
+            <div class="ride-card">
+                <h2>Add Ride Plan</h2>
+                <div class="ride-form">
+
+                    <label>Nama Ride</label>
+                    <input type="text" id="rideName" placeholder="Contoh: Jogja Touring">
+
+                    <label>Link Gambar</label>
+                    <input type="url" id="image" placeholder="Paste link gambar di sini">
+
+                    <label>Location</label>
+                    <input type="text" id="location" placeholder="Contoh: Yogyakarta, di Yogyakarta">
+
+                    <label>Tanggal</label>
+                    <input type="date" id="date">
+
+                    <label>Waktu</label>
+                    <input type="time" id="time">
+
+                    <label>Jarak</label>
+                    <input type="number" id="distance" placeholder="Contoh: 530">
+
+                    <label>Titik Awal</label>
+                    <input type="text" id="startPoint" placeholder="Contoh: BSD City, Tangerang Selatan">
+
+                </div>
+            </div>
+
+            <div class="expense-card">
+                <h2>Biaya Perjalanan</h2>
+
+                <label>Nama Pengeluaran</label>
+                <input type="text" id="expenseName">
+
+                <label>Nominal / Harga</label>
+                <input type="number" id="expensePrice">
+
+                <label>Keterangan</label>
+                <textarea id="expenseDescription"></textarea>
+
+                <button type="button" id="addExpense" class="btn btn-dark">
+                    + Tambah Biaya
+                </button>
+            </div>
+
+            <div class="expense-list">
+                <div class="table-header">
+                    <h2>Daftar Biaya</h2>
+                    <button type="button" id="resetData">
+                        Reset Semua Data
+                    </button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama Biaya</th>
+                            <th>Nominal</th>
+                            <th>Keterangan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseTable"></tbody>
+                </table>
+                <div class="total">
+                    Total : Rp <span id="totalPrice">0</span>
+                </div>
+            </div>
+
+            <button type="submit" id="saveRide">
+                Simpan Ride Plan
+            </button>
+
+        </div>
+        <script src="../assets/js/addplan.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+    </body>
+</html>

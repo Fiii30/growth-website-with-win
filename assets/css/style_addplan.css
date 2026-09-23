@@ -1,0 +1,165 @@
+.ride-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.ride-card,
+.expense-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.ride-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+#backButton {
+    padding: 8px 15px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background: #333;
+    color: white;
+}
+
+.ride-card h2,
+.expense-card h2,
+.expense-list h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ride-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.ride-form label {
+    font-weight: 600;
+    margin-bottom: -8px;
+}
+
+.ride-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.expense-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-card label {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.expense-card input,
+.expense-card textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.expense-card textarea {
+    min-height: 40px;
+    max-height: 80px;
+    resize: vertical;
+}
+
+#addExpense {
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.table-header h2 {
+    margin: 0;
+}
+
+#resetData {
+    padding: 8px 14px;
+    border: 1px solid #dc3545;
+    border-radius: 6px;
+    background: white;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#resetData:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.expense-list {
+    grid-column: 1 / -1;
+
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.expense-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expense-list th,
+.expense-list td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.expense-list th {
+    font-weight: 600;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    .ride-container {
+        grid-template-columns: 1fr;
+    }
+
+    .ride-form {
+        grid-template-columns: 1fr;
+    }
+
+    .expense-list {
+        grid-column: auto;
+    }
+
+}

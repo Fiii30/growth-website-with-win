@@ -11,17 +11,11 @@ const livechats = [
         email: 'hansipp@gmail.com',
         commant: 'gass!'
     },
-    {
-        id: 3,
-        name: 'Mamans',
-        email: 'mamasukamotoran@gmail.com',
-        commant: 'atur tanggal dulu mas'
-    },
 
 ]
 
 function uploadchat(){
-    const container = document.getElementById('chat-user')
+    const container = document.getElementById('live-chat')
 
     let chatting = '';
 
@@ -29,14 +23,12 @@ function uploadchat(){
         const livechat = livechats[i]
 
         chatting += `
-            <div class="user">
-                <p class="user-name">${livechat.name}</p>
-                <p class="user-email">${livechat.email}</p>
-            </div>
-            <p class="comment">${livechat.commant}</p>
-            <div class="btn-action">
-                <button>Edit</button>
-                <button>Delete</button>
+            <div class="chat-user" id="chat-user">
+                <div class="user">
+                    <p class="user-name">${livechat.name}</p>
+                    <p class="user-email">${livechat.email}</p>
+                </div>
+                <p class="comment">${livechat.commant}</p>
             </div>
         `
     }
@@ -62,4 +54,5 @@ form.addEventListener('submit', function(event){
     };
     livechats.push(newchat);
     uploadchat();
+    form.reset();
 })

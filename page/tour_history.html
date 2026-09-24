@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>History</title>
+        <link rel="stylesheet" href="../assets/css/history.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Touring History</h1>
+            <p class="subtitle">Histori Touring Community</p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search nama touring atau nama kota ...">
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Touring</th>
+                            <th>Lokasi</th>
+                            <th>Jumlah Peserta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="touringTable">
+                        <!-- dari js -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="average">
+                <p>
+                    Rata-rata Peserta:
+                    <span id="averageMember">0</span> orang
+                </p>
+            </div>
+
+            <a href="community.html" class="btn-back">
+                Kembali
+            </a>
+        </div>
+
+        <script src="../assets/js/tour_history.js"></script>
+    </body>
+</html>

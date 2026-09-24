@@ -202,8 +202,15 @@
     text-align: center;
 }
 
-.add{
+.btn-action-group {
     position: absolute;
+    top: 30px;
+    right: 4%;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action{
     top: 30px;
     right: 4%;
     padding: 10px 18px;
@@ -214,7 +221,7 @@
     font-weight: bold;
 }
 
-.add:hover {
+.btn-action:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
